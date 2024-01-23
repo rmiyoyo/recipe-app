@@ -88,6 +88,7 @@ Clone this repository to your desired folder:
 To run the project, execute the following command:
 ```sh
   cd recipe-app
+  bundle install
   rails s
 ```
 To test the project, execute the following command:
