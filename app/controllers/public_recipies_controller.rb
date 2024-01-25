@@ -1,0 +1,2 @@
+class PublicRecipiesController < ApplicationController
+end
