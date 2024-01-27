@@ -5,7 +5,7 @@ RSpec.describe Inventory, type: :model do
 
   it 'is considered invalid without a name' do
     inventory = Inventory.new(
-      user: user
+      user:
     )
     expect(inventory).not_to be_valid
   end
@@ -20,7 +20,7 @@ RSpec.describe Inventory, type: :model do
   it 'is considered invalid if the name exceeds the maximum length' do
     inventory = Inventory.new(
       name: 'A' * 256,
-      user: user
+      user:
     )
     expect(inventory).not_to be_valid
   end
