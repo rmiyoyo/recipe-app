@@ -7,7 +7,7 @@ RSpec.describe InventoriesController, type: :controller do
   describe 'GET #index' do
     it 'should assign all inventories to the instance variable @inventories' do
       user = create(:user)
-      inventory = create(:inventory, user:)
+      inventory = create(:inventory, user: user)
       sign_in(user)
 
       get :index
@@ -18,7 +18,7 @@ RSpec.describe InventoriesController, type: :controller do
   describe 'GET #show' do
     it 'should assign the requested inventory to the instance variable @inventory' do
       user = create(:user)
-      inventory = create(:inventory, user:)
+      inventory = create(:inventory, user: user)
       sign_in(user)
 
       get :show, params: { id: inventory.id }
@@ -27,7 +27,7 @@ RSpec.describe InventoriesController, type: :controller do
 
     it 'should render the template :show' do
       user = create(:user)
-      inventory = create(:inventory, user:)
+      inventory = create(:inventory, user: user)
       sign_in(user)
 
       get :show, params: { id: inventory.id }
@@ -95,7 +95,7 @@ RSpec.describe InventoriesController, type: :controller do
     let(:user) { create(:user) }
 
     it 'should delete the inventory' do
-      inventory = create(:inventory, user:)
+      inventory = create(:inventory, user: user)
       sign_in(user)
       expect do
         delete :destroy, params: { id: inventory.id }
@@ -103,7 +103,7 @@ RSpec.describe InventoriesController, type: :controller do
     end
 
     it 'should redirect to the inventories index page' do
-      inventory = create(:inventory, user:)
+      inventory = create(:inventory, user: user)
       sign_in(user)
       delete :destroy, params: { id: inventory.id }
       expect(response).to redirect_to(inventories_path)
