@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <%= link_to "Recipe App", root_path, class: "navbar-brand text-white" %>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <%= link_to "Recipes", root_path, class: "nav-link text-white" %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "Inventories", inventories_path, class: "nav-link text-white" %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "Public Recipes", public_recipes_path, class: "nav-link text-white" %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "New Food", new_food_path, class: "nav-link text-white" %>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div>
+      <%= button_to "Sign out", destroy_user_session_path, method: "delete", class: "btn text-white" %>
+    </div>
+
+  </div>
+
+</nav>
