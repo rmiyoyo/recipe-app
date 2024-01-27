@@ -1,6 +1,6 @@
 class InventoriesController < ApplicationController
   def index
-    @inventories = Inventory.all
+    @inventories = current_user.inventories
   end
 
   def show
