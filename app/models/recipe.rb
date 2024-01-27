@@ -1,15 +1,10 @@
 class Recipe < ApplicationRecord
-  belongs_to :user
-  has_many :recipe_foods, foreign_key: :recipe_id, dependent: :destroy
+  belongs_to :user, class_name: 'User', foreign_key: 'user_id'
+  has_many :recipe_foods
 
-  validates :name, :preparation_time, :cooking_time, :description, presence: true
-
-  def self.calculate_total_amount(recipe)
-    total_amount = 0
-    recipe.recipe_foods.includes(:food).each do |recipe_food|
-      food = recipe_food.food
-      total_amount += recipe_food.quantity * food.price
-    end
-    total_amount
-  end
+  validates :name, presence: true, length: { in: 1..100 }
+  validates :preparation_time, presence: true
+  validates :cooking_time, presence: true
+  validates :public, inclusion: { in: [true, false] }
+  validates :description, presence: true
 end
