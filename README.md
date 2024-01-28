@@ -3,9 +3,6 @@
 The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
 ## Getting Started
-
-This is a Rails project.
-
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
@@ -63,7 +60,7 @@ This is a Rails project.
 - A list of all public recipes from other users with their names and total prices.
 - Inventories list (with all CRUD implementation, except for 'update').
 - Food list for a given inventory (with all CRUD implementation, except for 'update').
-- Inventory shopping list, a shopping list, but only taking into consideration a chosen recipe and inventory.
+- Inventory shopping list. NB: a shopping list, but only taking into consideration a chosen recipe and inventory.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
