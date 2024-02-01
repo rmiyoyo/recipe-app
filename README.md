@@ -110,11 +110,6 @@ To test the project, execute the following command:
 - Instagram: [@mr_morsecode](https://instagram.com/mr_morsecode)
 - LinkedIn: [Sami Ullah](https://www.linkedin.com/in/sami-ullah-42a4231aa/)
 
-👤 **Ismail Halliru Muhammad**
-
-- GitHub: [@yayaismaail](https://github.com/yayaismaail)
-- Portfolio: [Ismail Halliru Muhammad](https://yayaismaail.github.io/my-portfolio/)
-- LinkedIn: [Ismail Halliru Muhammad](https://www.linkedin.com/mwlite/in/ismail-halliru-muhammad-2a8453127)
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
 
